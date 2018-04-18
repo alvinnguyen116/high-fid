@@ -1,0 +1,181 @@
+<!DOCTYPE html>     
+<html lang="en"><!--  For easy insertion, simply copy and paste the head and body tags  -->
+  <head>  
+    <meta charset="utf-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sleep Monitor</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
+    <link href="css/midfid.css" rel="stylesheet" type="text/css"/>
+    <link
+    <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+  </head>
+  <body> 
+
+    <div class="intro newpage">
+
+        <p>
+        Start sleeping better today!  
+        </p>
+  
+
+<!--       <div class="container"> -->
+
+        <div class="row">
+          <div class="form col-sm-6">
+            <form>
+              <input type="text" name="firstname" placeholder="Name or Email" /> <br>
+              <input type="text" name="lastname" placeholder="Password"/> <br>
+              <input type="submit" value="Sign in" onClick="log_in(); return false"/> <input type="submit" value="Log in" onClick="log_in(); return false"/> 
+            </form>
+          </div>
+
+          <div class="col-sm-6" id="social"> 
+              <a class="btn btn-block btn-social btn-twitter"> <span class="fa fa-twitter"></span> Sign in with Twitter</a>
+              <a class="btn btn-block btn-social btn-facebook"> <span class="fa fa-facebook"></span> Sign in with FaceBook</a>
+              <a class="btn btn-block btn-social btn-twitter"> <span class="fa fa-google"></span> Sign in with Google</a>
+          </div>
+        </div>
+
+<!--       </div> -->
+
+    </div>
+
+    <div class="home newpage">
+<!--        <div class="container"> -->
+          <div class="row">
+            <div class="col-md-6"> <div class="wrap"> Your Profile </div></div>
+            <div class="col-md-6"> <div class="wrap"> Share! </div></div>
+          </div>
+    
+          <div class="row">
+            <div class="wrap"> You currently need <div id="time"> </div> of Sleep! </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"> <div class="wrap" onClick="update()">Update</div></div>
+            <div class="col-md-6"> <div class="wrap" id ="change" onClick="change()">Asleep</div></div>
+          </div>
+
+<!--         </div> -->
+    </div>
+      
+    <div class="exercise newpage update">
+      <p class="title">
+        EXERCISE 
+      </p>
+
+      <form>
+<!--         <div class="container"> -->
+          <div class="row">
+
+            <div class="col-md-4"> Type: <input type="text" name="equipment" placeholder="Type of Workout"/> <br> </div>
+            <div class="col-md-4"> Duration: <input type="text" name="equipment" placeholder="Duration"/> <br> </div>
+            <div class="col-md-4"> Difficulty (1-10): <input type="text" name="equipment" placeholder="Level of Difficulty"/> <br> </div>
+
+          </div>
+          <div class="row col-md-12"> 
+            <p> Add Workout</p>
+          </div>
+<!--         </div> -->
+      </form>
+    </div>
+
+    <div class="food newpage update">
+      <p class="title">
+        FOOD
+      </p>
+
+      <form>
+<!--         <div class="container"> -->
+          <div class="row">
+
+            <div class="col-md-4"> Type: <input type="text" name="equipment" placeholder="Type of Food"/> <br> </div>
+            <div class="col-md-4"> Nutrient information: <input type="text" name="equipment" placeholder="Duration"/> <br> </div>
+            <div class="col-md-4"> Take a Picture! </div>
+
+          </div>
+          <div class="row col-md-12"> 
+            <p> Add Food Item</p>
+          </div>
+<!--         </div> -->
+      </form>
+    </div>
+
+    <div class="body newpage update">
+      <p class="title">
+        BODY
+      </p>
+
+      <form>
+<!--         <div class="container"> -->
+          <div class="row">
+
+            <div class="col-md-4"> Weight: <input type="text" name="equipment" placeholder="Weight"/> <br> </div>
+            <div class="col-md-4"> Height: <input type="text" name="equipment" placeholder="Height"/> <br> </div>
+            <div class="col-md-4"> Size:  <input type="text" name="equipment" placeholder="Size"/> </div>
+
+          </div>
+          <div class="row col-md-12"> 
+            <p> Update Body</p>
+          </div>
+<!--         </div> -->
+      </form>
+    </div>
+
+    <div class="pa newpage update">
+      <p class="title">
+        PHYSICAL ACTIVITY
+      </p>
+
+      <form>
+<!--         <div class="container"> -->
+          <div class="row">
+
+            <div class="col-md-4"> Work: <input type="text" name="equipment" placeholder="Type of Work"/> <br> </div>
+            <div class="col-md-4"> Duration: <input type="text" name="equipment" placeholder="Duration"/> <br> </div>
+            <div class="col-md-4"> Difficulty (1-10): <input type="text" name="equipment" placeholder="Level of Difficulty"/> </div>
+
+          </div>
+          <div class="row col-md-12"> 
+            <p> Add Physical Activity</p>
+          </div>
+<!--         </div> -->
+      </form>
+    </div>
+
+    <div class="ma newpage update">
+      <p class="title">
+        MENTAL ACTIVITY
+      </p>
+
+      <form>
+<!--         <div class="container"> -->
+          <div class="row">
+
+            <div class="col-md-4"> Work: <input type="text" name="equipment" placeholder="Type of Work"/> <br> </div>
+            <div class="col-md-4"> Duration: <input type="text" name="equipment" placeholder="Duration"/> <br> </div>
+            <div class="col-md-4"> Difficulty (1-10): <input type="text" name="equipment" placeholder="Level of Difficulty"/> </div>
+
+          </div>
+          <div class="row col-md-12"> 
+            <p> Add Mental Activity</p>
+          </div>
+<!--         </div> -->
+      <div class="row">
+        <div class="col-md-5 wrap" onClick="back(); false"> Back </div>
+        <div class="col-md-5 wrap" onClick="back(); false"> Done </div>
+      </div>  
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/5d944c8323.js"></script>
+    <script type="text/javascript" src="js/Mid-Fid.js" defer></script>
+  </body>
+</html>
