@@ -1,0 +1,242 @@
+/*VARIABLES*/
+
+:root {
+	--exercise-color: #d27719;
+	--food-color: #da2244;
+	--body-color: #5258a0;
+	--pa-color: #1ab55fd1;
+	--ma-color: black;
+	--home-color: #9b4ea9;
+}
+
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	text-align: center;
+}
+
+.home, .update {
+	display: none;
+}
+
+.intro {
+	background: url(intro-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html { 
+  background: url(intro-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.intro  p {
+	font-size: 50px;
+	vertical-align: middle;
+	color: white;
+	line-height: 50px;
+	text-align: center;
+}
+
+.title {
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+	margin: 0 50px;
+	padding: 25px 20px;
+	line-height: 40px;
+		font-size: 50px;
+}
+
+
+
+/*STUFF YOU HAVE TO CHANGE */
+
+
+
+.exercise p, .exercise div p {
+	background-color: var(--exercise-color);
+}
+
+.food p, .food div p {
+	background-color: var(--food-color);
+}
+
+.body p, .body div p {
+	background-color: var(--body-color)
+}
+
+.pa p, .pa div p {
+	background-color: var(--pa-color)
+}
+
+.ma p, .ma div p {
+	background-color: var(--ma-color)
+}
+
+.wrap {
+	background-color: var(--home-color);
+}
+
+#change {
+	background-color: #4b73de;
+	color: white;
+	font-weight: bold;
+}
+
+
+.food div p:hover {
+	color: var(--food-color);
+}
+
+.exercise div p:hover {
+	color: var(--exercise-color);
+}
+
+.body div p:hover {
+	color: var(--body-color);
+}
+
+.pa div p:hover {
+	color: var(--pa-color);
+}
+
+.ma div p:hover {
+	color: var(--ma-color);
+}
+
+.wrap:hover {
+	color: var(--home-color);
+}
+
+
+
+
+.exercise {
+	background-color: #e3e49dd1;
+}
+
+.food {
+	background-color: #f7cacad1;
+}
+
+.body {
+	background-color: #b5bdf1d1;
+}
+
+.pa {
+	background-color: #93d495d1;
+}
+
+.ma {
+	background-color: #cac9c9;
+}
+
+.home {
+	background-color: #d9a6e2;
+}
+
+
+
+form input[type="submit"] {
+	background-color: #4b73de;
+	color: white;
+    border: none;
+    padding: 4px 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*    margin-right: 78px;*/
+}
+
+form input[type="text"] {
+	/*margin-right: -4px !important;*/
+	width: 198px ;
+}
+
+form input[type="submit"]:hover {
+	background-color: white;
+	color: #01abce;
+	cursor: pointer;
+}
+
+
+.form {
+	text-align: right;
+}
+
+#social {
+	text-align: center;	
+}
+
+.btn-block {
+	padding-left: 21px !important;
+	width: 189px !important;
+}
+
+.row {
+	margin-top: 117px;
+}
+
+.newpage {
+	padding: 100px 0px;
+}
+
+
+.col-md-12 p {
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 4px;
+	color: white;
+	margin: 0 auto;
+}
+
+
+
+
+
+.newpage div p:hover, .wrap:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+.wrap {
+	padding: 20px 10px;
+	font-size: 25px;
+	color: white;
+	border-radius: 10px;
+	width: 50%;
+	margin: 10px auto;
+	text-align: center;
+	line-height: 25px;
+}
+
+/*@MEDIA QUERIES */
+
+@media (max-width: 575px) {
+
+	.form {
+		text-align: center;
+	}
+
+	.btn {
+		margin: 0 auto;
+	}
+
+	form input[type = "submit"] {
+		margin-right: auto;
+	}
+
+	.intro p, .title {
+		font-size: 35px;
+	}
+
+}
