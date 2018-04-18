@@ -65,7 +65,7 @@ html {
 	background-color: var(--exercise-color);
 }
 
-.food p, .food div p {
+.food p, .food div p, .pic {
 	background-color: var(--food-color);
 }
 
@@ -92,7 +92,7 @@ html {
 }
 
 
-.food div p:hover {
+.food div p:hover, .pic:hover {
 	color: var(--food-color);
 }
 
@@ -203,7 +203,7 @@ form input[type="submit"]:hover {
 
 
 
-.newpage div p:hover, .wrap:hover {
+.newpage div p:hover, .wrap:hover, .pic:hover {
 	background-color: white;
 	cursor: pointer;
 }
@@ -215,6 +215,16 @@ form input[type="submit"]:hover {
 	border-radius: 10px;
 	width: 50%;
 	margin: 10px auto;
+	text-align: center;
+	line-height: 25px;
+}
+
+.pic {
+	padding: 20px 10px;
+	font-size: 25px;
+	color: white;
+	border-radius: 10px;
+	margin: 10px 70px;
 	text-align: center;
 	line-height: 25px;
 }
