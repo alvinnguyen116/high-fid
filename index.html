@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!--   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
     <link href="css/midfid.css" rel="stylesheet" type="text/css"/>
-    <link
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script|Gaegu|Gamja+Flower|Jua|Lobster" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
 
@@ -71,9 +71,9 @@
 <!--         <div class="container"> -->
           <div class="row">
 
-            <div class="col-md-4"> Type: <input type="text" name="equipment" placeholder="Type of Workout"/> <br> </div>
-            <div class="col-md-4"> Duration: <input type="text" name="equipment" placeholder="Duration"/> <br> </div>
-            <div class="col-md-4"> Difficulty (1-10): <input type="text" name="equipment" placeholder="Level of Difficulty"/> <br> </div>
+            <div class="col-md-4"> <div class="info"> Type <input type="text" name="equipment" placeholder="Type of Workout"/> </div> </div>
+            <div class="col-md-4"> <div class="info"> Duration <input type="text" name="equipment" placeholder="Duration"/> </div> </div>
+            <div class="col-md-4"> <div class="info"> Difficulty (1-10) <input type="text" name="equipment" placeholder="Level of Difficulty"/> </div> </div>
 
           </div>
           <div class="row col-md-12"> 
@@ -92,9 +92,9 @@
 <!--         <div class="container"> -->
           <div class="row">
 
-            <div class="col-md-4"> Type: <input type="text" name="equipment" placeholder="Type of Food"/> <br> </div>
-            <div class="col-md-4"> Nutrient information: <input type="text" name="equipment" placeholder="Duration"/> <br> </div>
-            <div class="col-md-4"> <div class="pic"> Take a Picture! </div></div>
+            <div class="col-md-4"> <div class="info"> Type <input type="text" name="equipment" placeholder="Type of Food"/> </div>  </div>
+            <div class="col-md-4"> <div class="info"> Nutrient information <input type="text" name="equipment" placeholder="Duration"/> </div> </div>
+            <div class="col-md-4"> <div class="info button"> Take a Picture! </div></div>
 
           </div>
           <div class="row col-md-12"> 
@@ -113,9 +113,9 @@
 <!--         <div class="container"> -->
           <div class="row">
 
-            <div class="col-md-4"> Weight: <input type="text" name="equipment" placeholder="Weight"/> <br> </div>
-            <div class="col-md-4"> Height: <input type="text" name="equipment" placeholder="Height"/> <br> </div>
-            <div class="col-md-4"> Size:  <input type="text" name="equipment" placeholder="Size"/> </div>
+            <div class="col-md-4"> <div class="info">Weight <input type="text" name="equipment" placeholder="Weight"/> </div> </div>
+            <div class="col-md-4"> <div class="info">Height <input type="text" name="equipment" placeholder="Height"/> </div> </div>
+            <div class="col-md-4"> <div class="info">Size  <input type="text" name="equipment" placeholder="Size"/> </div></div>
 
           </div>
           <div class="row col-md-12"> 
@@ -134,9 +134,9 @@
 <!--         <div class="container"> -->
           <div class="row">
 
-            <div class="col-md-4"> Work: <input type="text" name="equipment" placeholder="Type of Work"/> <br> </div>
-            <div class="col-md-4"> Duration: <input type="text" name="equipment" placeholder="Duration"/> <br> </div>
-            <div class="col-md-4"> Difficulty (1-10): <input type="text" name="equipment" placeholder="Level of Difficulty"/> </div>
+            <div class="col-md-4"> <div class="info"> Work <input type="text" name="equipment" placeholder="Type of Work"/> </div> </div>
+            <div class="col-md-4"> <div class="info">Duration <input type="text" name="equipment" placeholder="Duration"/> </div> </div>
+            <div class="col-md-4"> <div class="info">Difficulty (1-10) <input type="text" name="equipment" placeholder="Level of Difficulty"/> </div> </div>
 
           </div>
           <div class="row col-md-12"> 
@@ -155,9 +155,9 @@
 <!--         <div class="container"> -->
           <div class="row">
 
-            <div class="col-md-4"> Work: <input type="text" name="equipment" placeholder="Type of Work"/> <br> </div>
-            <div class="col-md-4"> Duration: <input type="text" name="equipment" placeholder="Duration"/> <br> </div>
-            <div class="col-md-4"> Difficulty (1-10): <input type="text" name="equipment" placeholder="Level of Difficulty"/> </div>
+            <div class="col-md-4"> <div class="info">Work <input type="text" name="equipment" placeholder="Type of Work"/> </div> </div>
+            <div class="col-md-4"> <div class="info">Duration <input type="text" name="equipment" placeholder="Duration"/> </div> </div>
+            <div class="col-md-4"> <div class="info">Difficulty (1-10) <input type="text" name="equipment" placeholder="Level of Difficulty"/> </div></div>
 
           </div>
           <div class="row col-md-12"> 
@@ -165,8 +165,9 @@
           </div>
 <!--         </div> -->
       <div class="row">
-        <div class="col-md-5 wrap" onClick="back(); false"> Back </div>
-        <div class="col-md-5 wrap" onClick="back(); false"> Done </div>
+        <div class="col-md-4" onClick="back(); false"> <div class="info button"> &larr; </div></div>
+        <div class="col-md-4"> </div>
+        <div class="col-md-4" onClick="back(); false"> <div class="info button"> &rarr; </div></div>
       </div>  
       </form>
     </div>
