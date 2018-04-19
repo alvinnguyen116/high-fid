@@ -1,18 +1,24 @@
 /*VARIABLES*/
 
 :root {
-	--exercise-color: #d27719;
-	--food-color: #da2244;
-	--body-color: #5258a0;
-	--pa-color: #1ab55fd1;
-	--ma-color: black;
-	--home-color: #9b4ea9;
+	--exercise-color: #e3e49dd1;
+	--food-color: #f7cacad1;
+	--body-color: #b5bdf1d1;
+	--pa-color: #93d495d1;
+	--ma-color: #cac6ccbd;
+	--home-color: #fdfdfc96;
 }
 
 html, body {
 	max-width: 100%;
 	overflow-x: hidden;
 	text-align: center;
+/*font-family: 'Gaegu', cursive;
+font-family: 'Gamja Flower', cursive;
+font-family: 'Jua', sans-serif;
+font-family: 'Amatic SC', cursive;
+font-family: 'Dancing Script', cursive;*/
+font-family: 'Lobster', cursive;
 }
 
 .home, .update {
@@ -20,7 +26,7 @@ html, body {
 }
 
 .intro {
-	background: url(intro-background.jpg) no-repeat center center fixed; 
+	background: url(tintro2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,7 +34,7 @@ html, body {
 }
 
 html { 
-  background: url(intro-background.jpg) no-repeat center center fixed; 
+  background: url(tintro2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,7 +53,7 @@ html {
 .title {
 	vertical-align: middle;
 	text-align: center;
-	color: white;
+	color: black;
 	border-radius: 10px;
 	margin: 0 50px;
 	padding: 25px 20px;
@@ -61,23 +67,23 @@ html {
 
 
 
-.exercise p, .exercise div p {
+.exercise p, .exercise div p, .exercise .info {
 	background-color: var(--exercise-color);
 }
 
-.food p, .food div p, .pic {
+.food p, .food div p, .food .info {
 	background-color: var(--food-color);
 }
 
-.body p, .body div p {
+.body p, .body div p, .body .info {
 	background-color: var(--body-color)
 }
 
-.pa p, .pa div p {
+.pa p, .pa div p, .pa .info {
 	background-color: var(--pa-color)
 }
 
-.ma p, .ma div p {
+.ma p, .ma div p, .ma .info {
 	background-color: var(--ma-color)
 }
 
@@ -86,13 +92,13 @@ html {
 }
 
 #change {
-	background-color: #4b73de;
-	color: white;
+	background-color: #4b73ded1;
+	color: black;
 	font-weight: bold;
 }
 
 
-.food div p:hover, .pic:hover {
+/*.food div p:hover, .food .button:hover {
 	color: var(--food-color);
 }
 
@@ -114,57 +120,89 @@ html {
 
 .wrap:hover {
 	color: var(--home-color);
-}
+}*/
 
 
 
 
 .exercise {
-	background-color: #e3e49dd1;
+	/*background-color: #e3e49dd1;*/
+background: url(tWeight.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .food {
-	background-color: #f7cacad1;
+	/*background-color: #f7cacad1;*/
+	background: url(tFood.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .body {
-	background-color: #b5bdf1d1;
+	/*background-color: #b5bdf1d1;*/
+		background: url(tbody.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .pa {
-	background-color: #93d495d1;
+/*	background-color: #93d495d1;*/
+	background: url(tpa.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .ma {
-	background-color: #cac9c9;
+	/*background-color: #cac9c9;*/	
+	background: url(tlibrary.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 .home {
-	background-color: #d9a6e2;
+	/*background-color: #d9a6e2;*/
+	background: url(tcamp.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 
 
 form input[type="submit"] {
-	background-color: #4b73de;
+	background-color: #000000c9;
 	color: white;
     border: none;
     padding: 4px 6px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 /*    margin-right: 78px;*/
 }
 
 form input[type="text"] {
 	/*margin-right: -4px !important;*/
-	width: 198px ;
+	width: 198px;
 }
 
 form input[type="submit"]:hover {
-	background-color: white;
-	color: #01abce;
+	background-color: #ffffffbd;
+/*	color: #01abce;*/
+	color: black;
 	cursor: pointer;
 }
 
@@ -195,7 +233,6 @@ form input[type="submit"]:hover {
 	font-size: 20px;
 	padding: 5px;
 	border-radius: 4px;
-	color: white;
 	margin: 0 auto;
 }
 
@@ -203,15 +240,14 @@ form input[type="submit"]:hover {
 
 
 
-.newpage div p:hover, .wrap:hover, .pic:hover {
-	background-color: white;
+.newpage div p:hover, .wrap:hover, .button:hover {
+	background-color: #ffffffbd;
 	cursor: pointer;
 }
 
 .wrap {
 	padding: 20px 10px;
 	font-size: 25px;
-	color: white;
 	border-radius: 10px;
 	width: 50%;
 	margin: 10px auto;
@@ -219,14 +255,18 @@ form input[type="submit"]:hover {
 	line-height: 25px;
 }
 
-.pic {
-	padding: 20px 10px;
+
+.info {
+	padding: 7px 10px;
 	font-size: 25px;
-	color: white;
 	border-radius: 10px;
-	margin: 10px 70px;
+	margin: 10px 20px;
 	text-align: center;
 	line-height: 25px;
+}
+
+.update input[type="text"] {
+	margin-top: 7px;
 }
 
 /*@MEDIA QUERIES */
