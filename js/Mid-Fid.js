@@ -2,10 +2,10 @@ function change() {
 	var status = $("#change").text();
 	if (status == "Asleep") {
 		$("#change").html("Awake");
-		$("#change").css({"background-color":"#d27719"});
+		$("#change").css({"background-color":"#e6d963ba"});
 	} else {
 		$("#change").html("Asleep");
-		$("#change").css({"background-color":"#4b73de"});
+		$("#change").css({"background-color":"#4b73ded1"});
 	}
 }
 
