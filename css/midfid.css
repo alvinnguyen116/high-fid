@@ -13,14 +13,11 @@ html, body {
 	max-width: 100%;
 	overflow-x: hidden;
 	text-align: center;
-/*font-family: 'Gaegu', cursive;
-font-family: 'Gamja Flower', cursive;
-font-family: 'Jua', sans-serif;
-font-family: 'Amatic SC', cursive;*/
-font-family: 'Dancing Script', cursive;
-/*font-family: 'Lobster', cursive;*/
 }
 
+html, body, input {
+font-family: 'Jua', sans-serif !important;
+}
 .home, .update {
 	display: none;
 }
@@ -221,11 +218,11 @@ form input[type="submit"]:hover {
 }
 
 .row {
-	margin-top: 117px;
+	margin-top: 75px;
 }
 
 .newpage {
-	padding: 100px 0px;
+	padding: 140px 0px;
 }
 
 
